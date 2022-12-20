@@ -3,6 +3,7 @@ package com.cydeo;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Day2Task4Librarian {
@@ -14,6 +15,8 @@ public class Day2Task4Librarian {
         driver.findElement(By.className("form-control")).sendKeys("incorrectemail@gmail.com");
 
         driver.findElement(By.id("inputPassword")).sendKeys("incorrectPassword");
+       WebElement signInButton = driver.findElement(By.tagName("button"));
+       signInButton.click();
 
 
 
