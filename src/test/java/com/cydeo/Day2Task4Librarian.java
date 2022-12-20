@@ -11,7 +11,7 @@ public class Day2Task4Librarian {
         WebDriver driver= new ChromeDriver();
         driver.get("https://library2.cybertekschool.com/login.html");
         driver.manage().window().maximize();
-        driver.findElement(By.id("inputEmail")).sendKeys("incorrectemail@gmail.com");
+        driver.findElement(By.className("form-control")).sendKeys("incorrectemail@gmail.com");
 
         driver.findElement(By.id("inputPassword")).sendKeys("incorrectPassword");
 
