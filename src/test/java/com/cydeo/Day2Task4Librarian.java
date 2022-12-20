@@ -16,6 +16,8 @@ public class Day2Task4Librarian {
 
         driver.findElement(By.id("inputPassword")).sendKeys("incorrectPassword");
        WebElement signInButton = driver.findElement(By.tagName("button"));
+       String sign = driver.findElement(By.tagName("button")).getText();
+        System.out.println(sign);
        signInButton.click();
 
 
