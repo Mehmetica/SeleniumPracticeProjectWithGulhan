@@ -16,5 +16,15 @@ public class Day2Task3 {
 
         WebElement googleBox =driver.findElement(By.name("q"));
         googleBox.sendKeys("apple" + Keys.ENTER); // enter a basma
+
+        String expectedInTitle = "apple";
+        String actualTitle = driver.getTitle();
+        if (actualTitle.startsWith(expectedInTitle)){
+            System.out.println("Title verification is PASSED");
+        }else System.out.println("Title verification is FAILED");
+
+
+
+
     }
 }
