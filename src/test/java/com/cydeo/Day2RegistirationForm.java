@@ -36,6 +36,7 @@ public class Day2RegistirationForm {
         WebElement lastName = driver.findElement(By.name("lastname"));
         lastName.sendKeys("Gezer");
 
+
         driver.close();
 
     }
